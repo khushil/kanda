@@ -14,19 +14,13 @@ public class FuelDepotController : MonoBehaviour
     
     #region Public Variables
     
+    public float depotFuel => _fuel;
+    public float fuelTransferRate => _refuelRate;
 
-    
     #endregion
-    
-    // Start is called before the first frame update
-    void Start()
+
+    public void EmptyTank()
     {
-
-    }
-
-    // Update is called once per frame
-    void LateUpdate()
-    {
-
+        _fuel = 0f;
     }
 }
